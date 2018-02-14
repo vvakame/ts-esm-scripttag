@@ -1,0 +1,28 @@
+{
+  "name": "ts-esm-scripttag",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rm -rf dist/",
+    "copy": "cp -r ./static/ dist/",
+    "build": "npm run clean && npm run copy && tsfmt -r && tsc",
+    "serve": "npm run build && serve dist/",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vvakame/ts-esm-scripttag.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vvakame/ts-esm-scripttag/issues"
+  },
+  "homepage": "https://github.com/vvakame/ts-esm-scripttag#readme",
+  "devDependencies": {
+    "serve": "^6.4.9",
+    "typescript": "^2.7.1",
+    "typescript-formatter": "^7.0.1"
+  }
+}
